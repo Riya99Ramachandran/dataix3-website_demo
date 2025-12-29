@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background: white;
+  color: #111;
+}
+
+/* Section spacing */
+section {
+  min-height: 100vh;
+  padding: 140px 80px;
+}

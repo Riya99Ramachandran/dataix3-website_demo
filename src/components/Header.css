@@ -1,0 +1,71 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  padding: 0 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: transparent;
+  transition: all 0.4s ease;
+  z-index: 1000;
+}
+
+/* ON SCROLL */
+.header.scrolled {
+  height: 68px;
+  background: rgba(179, 218, 218, 0.9);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(56, 55, 55, 0.05);
+}
+
+/* LOGO */
+.logo {
+  width: 140px;
+  height: 40px;
+  background-image: url("https://dataix3.com/wp-content/uploads/2025/10/cropped-New-Project-1-300x75.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* NAV LINKS */
+.nav a {
+  position: relative;
+  margin-left: 90px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fcfcfc;
+}
+
+/* UNDERLINE ANIMATION */
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 1px;
+  background: #111;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.nav a:hover::after {
+  transform: scaleX(1);
+}
+
+/* CTA BUTTON */
+.nav-btn {
+  padding: 8px 16px;
+  border: 1px solid #111;
+  border-radius: 25px;
+}
+.nav-btn:hover {
+  background: #036473;
+  color: #f9f5f5;
+}
